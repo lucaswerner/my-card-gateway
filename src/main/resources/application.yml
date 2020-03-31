@@ -14,3 +14,14 @@ management:
       exposure:
         include:
           - "routes"
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 3000
