@@ -1,6 +1,10 @@
 server:
   port: 5555
 
+spring:
+  application:
+    name: 'my-card-gateway'
+
 eureka:
   client:
     register-with-eureka: true
@@ -28,4 +32,4 @@ ribbon:
 
 zuul:
   sensitive-headers:
-    - Cookie, Authorization
+    - Cookie, Authorization, grant_type, scope,
