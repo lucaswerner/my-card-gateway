@@ -32,4 +32,6 @@ ribbon:
 
 zuul:
   sensitive-headers:
-    - Cookie, Authorization, grant_type, scope,
+    - Cookie, Authorization, grant_type, scope
+  threadPool:
+    useSeparateThreadPools: true
